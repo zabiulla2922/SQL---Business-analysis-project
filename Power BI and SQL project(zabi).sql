@@ -1,0 +1,3 @@
+select sum(sales.transactions.sales_amount) from sales.transactions inner join sales.date on sales.transactions.order_date = sales.date.date where date.year ="2020" And date.month_name="January" And transactions.currency ="INR\r" or transactions.currency = "USD\r";
+
+select sum(sales.transactions.sales_amount) from sales.transactions inner join sales.date on sales.transactions.order_date = sales.date.date where transactions.market_code ="Mark001" And date.year="2020";
